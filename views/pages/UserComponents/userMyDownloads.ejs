@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pikslide | Fashion Store v.1</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
+    <meta name="keywords"
+        content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Pikslide Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Link -->
+    <%-include('../../Link_Script/Links.ejs')%>
+    <!-- Style Link -->
+</head>
+
+<body class="toolbar-enabled">
+
+    <!-- Sign in / sign up modal-->
+    <%- include('../../Components/Login&SignUpSection') %>
+    <!-- Sign in / sign up modal-->
+
+    <!-- Quick View Modal-->
+    <%- include('../../Components/QuickViewModalSection.ejs') %>
+    <!-- Quick View Modal-->
+
+    <!-- Navbar-->
+    <%- include('../../Components/NavbarSection')  %>
+    <!-- Navbar-->
+
+
+    <div class="container mt-4 pb-3">
+        <div class="bg-light box-shadowf-lg  overflow-hidden">
+            <div class="row">
+
+                <!-- Sidebar-->
+                <%- include('./userDashboard/Sidebar.ejs') %>
+                <section class="col-lg-10 pt-lg-4 pb-4 mb-3">
+                    <div class=" px-4 ps-lg-0 pe-xl-5">
+                        <!-- Title-->
+                        <div class="d-sm-flex flex-wrap justify-content-between align-items-center border-bottom">
+                            <h2 class="font-weight-bold py-2 text-center text-sm-left">My Downloads</h2>
+                            <div class="py-2">
+                                <div class="d-flex flex-nowrap align-items-center pb-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container pb-5 mb-2 mb-md-4">
+                            <div class="row pt-3 mx-n2">
+
+                                <!-- Products list-->
+                                <div class="card product-card  col-lg-3 col-md-4 col-sm-4 mb-grid mt-2">
+                                    <button class="btn-wishlist btn-sm mr-3 mt-3 product-card bg-primary shadow "
+                                        type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Love"><i
+                                            class="czi-heart text-light shadow "></i></button>
+                                    <a class="card-img-top d-block" href="/posts/products">
+                                        <img src="../../assets/img/marketplace/products/02.jpg"
+                                            class="card-img-top mt-3" alt="Product">
+                                    </a>
+                                    <div class="card-body ">
+                                        <div class="d-flex flex-wrap justify-content-between align-items-start pb-1">
+                                            <div class="text-muted font-size-xs mr-1">
+                                                <a class="product-meta font-weight-medium" href="/users/profile">by
+                                                    Pikslide</a>
+                                            </div>
+                                            <div class="star-rating">
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="product-title font-size-sm mb-2">
+                                            <a href="/posts/products">Floating Phone and Tablet...</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <!-- Products list-->
+                                <div class="card product-card  col-lg-3 col-md-4 col-sm-4 mb-grid mt-2">
+                                    <button class="btn-wishlist btn-sm mr-3 mt-3 product-card bg-primary shadow "
+                                        type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Love"><i
+                                            class="czi-heart text-light shadow "></i></button>
+                                    <a class="card-img-top d-block" href="/posts/products">
+                                        <img src="../../assets/img/marketplace/products/02.jpg"
+                                            class="card-img-top mt-3" alt="Product">
+                                    </a>
+                                    <div class="card-body ">
+                                        <div class="d-flex flex-wrap justify-content-between align-items-start pb-1">
+                                            <div class="text-muted font-size-xs mr-1">
+                                                <a class="product-meta font-weight-medium" href="/users/profile">by
+                                                    Pikslide</a>
+                                            </div>
+                                            <div class="star-rating">
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="product-title font-size-sm mb-2">
+                                            <a href="/posts/products">Floating Phone and Tablet...</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <!-- Products list-->
+                                <div class="card product-card  col-lg-3 col-md-4 col-sm-4 mb-grid mt-2">
+                                    <button class="btn-wishlist btn-sm mr-3 mt-3 product-card bg-primary shadow "
+                                        type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Love"><i
+                                            class="czi-heart text-light shadow "></i></button>
+                                    <a class="card-img-top d-block" href="/posts/products">
+                                        <img src="../../assets/img/marketplace/products/02.jpg"
+                                            class="card-img-top mt-3" alt="Product">
+                                    </a>
+                                    <div class="card-body ">
+                                        <div class="d-flex flex-wrap justify-content-between align-items-start pb-1">
+                                            <div class="text-muted font-size-xs mr-1">
+                                                <a class="product-meta font-weight-medium" href="/users/profile">by
+                                                    Pikslide</a>
+                                            </div>
+                                            <div class="star-rating">
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="product-title font-size-sm mb-2">
+                                            <a href="/posts/products">Floating Phone and Tablet...</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <!-- Products list-->
+                                <div class="card product-card  col-lg-3 col-md-4 col-sm-4 mb-grid mt-2">
+                                    <button class="btn-wishlist btn-sm mr-3 mt-3 product-card bg-primary shadow "
+                                        type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Love"><i
+                                            class="czi-heart text-light shadow "></i></button>
+                                    <a class="card-img-top d-block" href="/posts/products">
+                                        <img src="../../assets/img/marketplace/products/02.jpg"
+                                            class="card-img-top mt-3" alt="Product">
+                                    </a>
+                                    <div class="card-body ">
+                                        <div class="d-flex flex-wrap justify-content-between align-items-start pb-1">
+                                            <div class="text-muted font-size-xs mr-1">
+                                                <a class="product-meta font-weight-medium" href="/users/profile">by
+                                                    Pikslide</a>
+                                            </div>
+                                            <div class="star-rating">
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="product-title font-size-sm mb-2">
+                                            <a href="/posts/products">Floating Phone and Tablet...</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination-->
+                        <nav class="d-md-flex justify-content-between align-items-center text-center text-md-start mt-4"
+                            aria-label="Page navigation">
+                            <div class="d-md-flex align-items-center w-100"><span
+                                    class="fs-sm text-muted me-md-3">Showing 5 of 9 products</span>
+                                <div class="progress w-100 my-3 mx-auto mx-md-0" style="max-width: 10rem; height: 4px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="56"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" type="button">More products</button>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Section -->
+    <!-- --------------------------------------------------------------- -->
+
+
+
+    <!-- Toast: Added to Cart-->
+    <%- include('../../Components/miniComponents/Add_to_Cart') %>
+    <!-- Toast: Added to Cart-->
+
+    <!-- Footer-->
+    <%- include('../../Components/FooterSection') %>
+    <!-- Footer-->
+
+    <!-- Mobile Viewport -->
+    <%- include('../../Components/miniComponents/MobileViewSection') %>
+    <!-- Mobile Viewport -->
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <%- include('../../Link_Script/Script') %>
+    <!-- Vendor scrits: js libraries and plugins-->
+
+
+</body>
+
+</html>

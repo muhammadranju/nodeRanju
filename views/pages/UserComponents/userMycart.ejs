@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pikslide | Fashion Store v.1</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
+    <meta name="keywords"
+        content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Pikslide Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Link -->
+    <%-include('../../Link_Script/Links.ejs')%>
+    <!-- Style Link -->
+</head>
+
+<body class="toolbar-enabled">
+
+    <!-- Sign in / sign up modal-->
+    <%- include('../../Components/Login&SignUpSection') %>
+    <!-- Sign in / sign up modal-->
+
+    <!-- Quick View Modal-->
+    <%- include('../../Components/QuickViewModalSection.ejs') %>
+    <!-- Quick View Modal-->
+
+    <!-- Navbar-->
+    <%- include('../../Components/NavbarSection')  %>
+    <!-- Navbar-->
+
+
+    <div class="container mt-4 pb-3">
+        <div class="bg-light box-shadowf-lg  overflow-hidden">
+            <div class="row">
+
+                <!-- Sidebar-->
+                <%- include('./userDashboard/Sidebar.ejs') %>
+                hello userMycart
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Section -->
+    <!-- --------------------------------------------------------------- -->
+
+
+
+    <!-- Toast: Added to Cart-->
+    <%- include('../../Components/miniComponents/Add_to_Cart') %>
+    <!-- Toast: Added to Cart-->
+
+    <!-- Footer-->
+    <%- include('../../Components/FooterSection') %>
+    <!-- Footer-->
+
+    <!-- Mobile Viewport -->
+    <%- include('../../Components/miniComponents/MobileViewSection') %>
+    <!-- Mobile Viewport -->
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <%- include('../../Link_Script/Script') %>
+    <!-- Vendor scrits: js libraries and plugins-->
+
+
+</body>
+
+</html>

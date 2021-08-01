@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pikslide | Fashion Store v.1</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
+    <meta name="keywords"
+        content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Pikslide Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Link -->
+    <%-include('../../Link_Script/Links.ejs')%>
+    <!-- Style Link -->
+</head>
+
+<body class="toolbar-enabled">
+
+    <!-- Sign in / sign up modal-->
+    <%- include('../../Components/Login&SignUpSection') %>
+    <!-- Sign in / sign up modal-->
+
+    <!-- Quick View Modal-->
+    <%- include('../../Components/QuickViewModalSection.ejs') %>
+    <!-- Quick View Modal-->
+
+    <!-- Navbar-->
+    <%- include('../../Components/NavbarSection')  %>
+    <!-- Navbar-->
+
+
+    <div class="container mt-4  ">
+        <div class="bg-light box-shadowf-lg  overflow-hidden">
+            <div class="row">
+
+                <!-- Sidebar-->
+                <%- include('./userDashboard/Sidebar.ejs') %>
+
+                <section class="col-lg-10 ">
+                    <div class="pt-2 px-4 pl-lg-0 pr-xl-5">
+                        <h2 class="font-weight-bold py-2 text-center text-sm-left">My Email Setting</h2>
+                        <hr class="mb-3">
+                        <!-- Tabs-->
+                        <!-- Tab content-->
+                        <div class="tab-content">
+                            <!-- Profile-->
+                            <div class="tab-pane fade show active" id="profile" role="tabpanel">
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="font-weight-bold">Your Email</label>
+                                            <input class="form-control" type="text" placeholder="Your email">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label class=" font-weight-bold">Your notifications</label>
+                                        <div class="form-group">
+                                            <button class="btn btn-outline-accent btn-sm">Manage email
+                                                notifications</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                        <div class="custom-control custom-checkbox d-block">
+                                            <input class="custom-control-input" type="checkbox" id="freelancer" checked>
+
+                                        </div>
+                                        <button class="btn btn-accent btn-shadow mt-3 mb-3 mt-sm-0 btn-sm "
+                                            type="button">Update
+                                            setting</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- Main Section -->
+    <!-- --------------------------------------------------------------- -->
+
+
+
+    <!-- Toast: Added to Cart-->
+    <%- include('../../Components/miniComponents/Add_to_Cart') %>
+    <!-- Toast: Added to Cart-->
+
+    <!-- Footer-->
+    <%- include('../../Components/FooterSection') %>
+    <!-- Footer-->
+
+    <!-- Mobile Viewport -->
+    <%- include('../../Components/miniComponents/MobileViewSection') %>
+    <!-- Mobile Viewport -->
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <%- include('../../Link_Script/Script') %>
+    <!-- Vendor scrits: js libraries and plugins-->
+
+
+</body>
+
+</html>

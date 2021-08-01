@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pikslide | Fashion Store v.1</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
+    <meta name="keywords"
+        content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Pikslide Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style Link -->
+    <%-include('../../Link_Script/Links.ejs')%>
+    <!-- Style Link -->
+</head>
+
+<body class="toolbar-enabled">
+
+    <!-- Sign in / sign up modal-->
+    <%- include('../../Components/Login&SignUpSection') %>
+    <!-- Sign in / sign up modal-->
+
+    <!-- Quick View Modal-->
+    <%- include('../../Components/QuickViewModalSection.ejs') %>
+    <!-- Quick View Modal-->
+
+    <!-- Navbar-->
+    <%- include('../../Components/NavbarSection')  %>
+    <!-- Navbar-->
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+    </style>
+
+    <div class="container mt-1 mb-3 d-flex justify-content-center">
+        <div class="overflow-hidden" style="background-color: #f4f6f9;">
+            <div class="row">
+                <!-- Card shadow: Round picture + outline socials -->
+                <div class="card text-center border-0  bg-light mt-2" style="background-color: #f4f6f9;">
+                    <div class="card-body mx-5 mb-10">
+                        <a href="/users/profile">
+                            <img class="d-inline-block rounded-circle mb-3" width="96"
+                                src="../../../assets/img/team/02.jpg" alt="Richard Williams" />
+                        </a>
+                        <h4 class="pt-1 font-weight-bold mb-1">Muhammad Ranju</h4>
+                        <a class="nav-link-style font-weight-bold mb-5"
+                            href="mailto:pikslide@gmail.com">pikslide@gmail.com
+                        </a>
+
+                        <div class="mb-3 mt-2 d-flex justify-content-center">
+                            <p class="mb-0 col-md-5 ">
+                                Hi, Thank you for visiting my profile. I am Muhammad Ranju. I have a special skill in
+                                Social Media Post & Flyer design
+                            </p>
+                        </div>
+                        <div class="mb-4">
+                            <button type="button"
+                                class="btn btn-primary btn-shadow btn-sm font-weight-bold">Follow</button>
+                            <a href="/users/setting" type="button"
+                                class="btn btn-outline-primary btn-sm font-weight-bold">Edit
+                                Profile</a>
+                        </div>
+                        <div class="mb-3">
+                            <a class="social-btn sb-round sb-facebook ml-2 mb-2" href="#">
+                                <i class="czi-facebook"></i>
+                            </a>
+                            <a class="social-btn sb-round sb-twitter ml-2 mb-2" href="#">
+                                <i class="czi-twitter"></i>
+                            </a>
+                            <a class="social-btn sb-round sb-pinterest ml-2 mb-2" href="#">
+                                <i class="czi-pinterest"></i>
+                            </a>
+                            <a class="social-btn sb-round sb-instagram ml-2 mb-2" href="#">
+                                <i class="czi-instagram"></i>
+                            </a>
+                            <a class="social-btn sb-round sb-youtube ml-2 mb-2" href="#">
+                                <i class="czi-youtube"></i>
+                            </a>
+                        </div>
+
+                        <%- include('../../Components/HomeProductViewSection.ejs') %>
+
+                    </div>
+
+                    <!-- pagination start -->
+                    <div class="container pb-3 ">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Previous">
+                                        <i class="czi-arrow-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item d-sm-none">
+                                    <span class="page-link page-link-static">1 / 5</span>
+                                </li>
+                                <li class="page-item active d-none d-sm-block" aria-current="page">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item d-none d-sm-block">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Next">
+                                        <i class="czi-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Toast: Added to Cart-->
+    <%- include('../../Components/miniComponents/Add_to_Cart') %>
+    <!-- Toast: Added to Cart-->
+
+    <!-- Footer-->
+    <%- include('../../Components/FooterSection') %>
+    <!-- Footer-->
+
+    <!-- Mobile Viewport -->
+    <%- include('../../Components/miniComponents/MobileViewSection') %>
+    <!-- Mobile Viewport -->
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <%- include('../../Link_Script/Script') %>
+    <!-- Vendor scrits: js libraries and plugins-->
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Unlimited Templates, Themes and More - Pikslide </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
+    <meta name="keywords"
+        content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Pikslide Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Link -->
+    <%-include('../Link_Script/Links.ejs')%>
+    <!-- Style Link -->
+</head>
+
+<body class="toolbar-enabled">
+
+    <!-- Sign in / sign up modal-->
+    <%- include('../Components/Login&SignUpSection') %>
+    <!-- Sign in / sign up modal-->
+
+    <!-- Quick View Modal-->
+    <%- include('../Components/QuickViewModalSection.ejs') %>
+    <!-- Quick View Modal-->
+
+    <!-- Navbar-->
+    <%- include('../Components/NavbarSection')  %>
+    <!-- Navbar--
+
+
+
+
+
+
+    <!-- Main Section -->
+    <!-- --------------------------------------------------------------- -->
+
+    <!-- Search Bar-->
+    <%- include('../Components/HomeSearchSection') %>
+    <!-- Search Bar-->
+
+    <!-- Page Content-->
+    <%- include('../Components/HomeProductViewSection') %>
+    <!-- Page Content-->
+
+    <!-- View More -->
+    <div class="container pb-5 mb-2 mb-md-4">
+        <div class=" text-center">
+            <a href="/posts" type="button" class="btn btn-accent btn-shadow">View More</a>
+        </div>
+    </div>
+    <!-- View More End -->
+
+    <!-- Hero slider-->
+    <%- include('../Components/miniComponents/HeroSliderSection') %>
+    <!-- Hero slider-->
+
+    <!-- Main Section -->
+    <!-- --------------------------------------------------------------- -->
+
+
+
+
+
+
+    <!-- Toast: Added to Cart-->
+    <%- include('../Components/miniComponents/Add_to_Cart') %>
+    <!-- Toast: Added to Cart-->
+
+    <!-- Footer-->
+    <%- include('../Components/FooterSection') %>
+    <!-- Footer-->
+
+    <!-- Mobile Viewport -->
+    <%- include('../Components/miniComponents/MobileViewSection') %>
+    <!-- Mobile Viewport -->
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <%- include('../Link_Script/Script') %>
+    <!-- Vendor scrits: js libraries and plugins-->
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>New Social Media Poster || Pikslide</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
+    <meta name="keywords"
+        content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Pikslide Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Link -->
+    <%-include('../../Link_Script/Links.ejs')%>
+    <!-- Style Link -->
+</head>
+
+<body class="toolbar-enabled bgs">
+    <!-- Sign in / sign up modal-->
+    <%- include('../../Components/Login&SignUpSection') %>
+    <!-- Sign in / sign up modal-->
+
+    <!-- Quick View Modal-->
+    <%- include('../../Components/QuickViewModalSection') %>
+    <!-- Quick View Modal-->
+
+    <!-- Navbar-->
+    <%- include('../../Components/NavbarSection')  %>
+
+
+
+
+
+
+    <!-- Main Section -->
+    <!-- --------------------------------------------------------------- -->
+
+    <div class="container mb-3 mt-3 ">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/">
+                        <i class="czi-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="/posts">Posts</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">product name</li>
+            </ol>
+        </nav>
+    </div>
+    <%- include('../../Components/miniComponents/ViewProductSection') %>
+    <%- include('../../Components/miniComponents/CommentSection') %>
+    <%- include('../../Components/miniComponents/RelatedProdictSection') %>
+
+
+
+    <!-- Main Section -->
+    <!-- --------------------------------------------------------------- -->
+
+
+
+
+
+
+
+    <!-- Toast: Added to Cart-->
+    <%- include('../../Components/miniComponents/Add_to_Cart') %>
+    <!-- Toast: Added to Cart-->
+
+    <!-- Footer-->
+    <%- include('../../Components/FooterSection') %>
+    <!-- Footer-->
+
+    <!-- Mobile Viewport -->
+    <%- include('../../Components/miniComponents/MobileViewSection') %>
+    <!-- Mobile Viewport -->
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <%- include('../../Link_Script/Script') %>
+    <!-- Vendor scrits: js libraries and plugins-->
