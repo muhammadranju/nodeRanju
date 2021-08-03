@@ -8,8 +8,7 @@ const publicRoute = require("./src/publicRoute");
 const userRouter = require("./src/userRoute");
 const postsRouter = require("./src/postsRoute");
 
-app.use("/assets", express.static("assets"));
-// app.use(express.static(__dirname + "/public"));
+app.use("/public", express.static("public"));
 app.set("view engine", "ejs");
 
 app.use("/users", userRouter);
