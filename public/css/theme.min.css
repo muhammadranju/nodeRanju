@@ -21,7 +21,7 @@
     --success: #42d697;
     --info: #69b3fe;
     --warning: #fea569;
-    --danger: #f34770;
+    --danger: #fd1e52;
     --light: #fff;
     --dark: #373f50;
     --accent: #4e54c8;
@@ -2902,7 +2902,7 @@ fieldset:disabled a.btn {
 .btn-primary {
     color: #fff;
     background-color: #1CC073;
-    border-color: #19a764;
+    border-color: #19a765af;
     box-shadow: none
 }
 
@@ -2932,13 +2932,13 @@ fieldset:disabled a.btn {
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #1CC073;
-    border-color: rgb(27, 245, 136)
+    border-color: rgba(0, 255, 115, 0.774)
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0 rgba(128, 254, 191, 0.5)
+    box-shadow: 0 0 0 0 rgba(0, 255, 128, 0.5)
 }
 
 .btn-secondary {
@@ -3290,12 +3290,12 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0 rgba(15, 157, 88, 0.808)
+    box-shadow: 0 0 0 0 rgba(24, 216, 123, 0.808)
 }
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-    color: #1CC073;
+    color: #0dff8e;
     background-color: transparent
 }
 
@@ -3310,7 +3310,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0 rgba(15, 157, 88, 0.808)
+    box-shadow: 0 0 0 0 rgba(23, 204, 117, 0.808)
 }
 
 .btn-outline-secondary {
@@ -5742,7 +5742,7 @@ a.badge-primary:focus {
 a.badge-primary:focus,
 a.badge-primary.focus {
     outline: 0;
-    box-shadow: 0 0 0 0 rgba(15, 157, 88, 0.575)
+    box-shadow: 0 0 0 0 rgba(23, 204, 117, 0.808)
 }
 
 .badge-secondary {
@@ -13346,7 +13346,7 @@ label:not(.form-check-label):not(.custom-control-label):not(.custom-file-label):
 }
 
 .btn-outline-primary {
-    border-color: rgba(105, 254, 179, 0.35)
+    border-color: rgb(5, 177, 91)
 }
 
 .btn-outline-secondary {
@@ -13391,7 +13391,7 @@ label:not(.form-check-label):not(.custom-control-label):not(.custom-file-label):
 }
 
 .btn-primary.btn-shadow {
-    box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(78, 190, 134, 0.9)
+    box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(24, 126, 75, 0.774)
 }
 
 .btn-secondary.btn-shadow {
@@ -18420,7 +18420,7 @@ html:not([dir=rtl]) .cz-range-slider-ui.noUi-horizontal .noUi-handle {
 }
 
 .bg-faded-primary {
-    background-color: rgba(105, 254, 184, 0.1) !important
+    background-color: rgba(105, 254, 184, 0.349) !important
 }
 
 .bg-faded-accent {
@@ -18796,4 +18796,24 @@ body {
 .log-btn {
     border: 1px solid;
     border-color: rgb(100, 100, 100);
+}
+
+
+.bg-gray {
+    margin-left: -10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.bg-gray:hover {
+    background-color: rgb(243, 243, 243);
+
+}
+
+.link-text {
+    font-size: 15px;
+}
+
+.link-text:hover {
+    color: rgb(29, 29, 29);
 }

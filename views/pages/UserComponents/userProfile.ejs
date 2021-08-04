@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pikslide | Fashion Store v.1</title>
+    <title><%= title %> </title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
     <meta name="keywords"
@@ -81,7 +81,40 @@
                             </a>
                         </div>
 
-                        <%- include('../../Components/HomeProductViewSection.ejs') %>
+                        <div class="container pb-5 mb-2 ">
+                            <div class="row pt-3 mx-n2">
+                                <!-- Product card (Grid) -->
+                                <% for(let i=0;i<8;i++){ %>
+                                <div class="card product-card  col-lg-3 col-md-4 col-sm-4 mb-grid-gutter ">
+                                    <button class="btn-wishlist btn-md mr-3 mt-3 product-card bg-danger btn-shadow "
+                                        type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Love"><i
+                                            class="czi-heart text-light shadow "></i></button>
+                                    <a class="card-img-top d-block" href="/posts/products">
+                                        <img src="../../public/img/marketplace/products/02.jpg"
+                                            class="card-img-top mt-3" alt="Product">
+                                    </a>
+                                    <div class="card-body ">
+                                        <div class="d-flex flex-wrap justify-content-between align-items-start pb-1">
+                                            <div class="text-muted font-size-xs mr-1">
+                                                <a class="product-meta font-weight-medium" href="/users/profile">by
+                                                    Pikslide</a>
+                                            </div>
+                                            <div class="star-rating">
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                                <i class="sr-star czi-star-filled active"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="product-title font-size-sm mb-2">
+                                            <a href="/posts/products">Floating Phone and Tablet...</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <% } %>
+                            </div>
+                        </div>
 
                     </div>
 

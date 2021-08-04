@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pikslide | Fashion Store v.1</title>
+    <title><%= title %> </title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
     <meta name="keywords"
@@ -47,7 +47,8 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <label class="form-label font-weight-bold">Make for*</label>
-                                    <select class="js-example-basic-multiple me-2 col-sm-12 select2" name="states[]">
+                                    <select class="js-example-basic-multiple me-2 col-sm-12 select2" name="states[]"
+                                        multiple="multiple">
                                         <option>Select category</option>
                                         <option>Photos</option>
                                         <option>Graphics</option>
@@ -60,7 +61,7 @@
                                 <div class="col-sm-6 mb-3">
                                     <label class="form-label font-weight-bold" for="unp-product-name">In*</label>
                                     <select class="js-example-basic-multiple form-select me-2 col-sm-12" name="states[]"
-                                        id='select2'>
+                                        multiple="multiple" id='select2'>
                                         <option>Select category</option>
                                         <option>Photos</option>
                                         <option>Graphics</option>
