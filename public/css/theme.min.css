@@ -18817,3 +18817,21 @@ body {
 .link-text:hover {
     color: rgb(29, 29, 29);
 }
+
+.password-box {
+    position: relative;
+}
+
+.far {
+    position: absolute;
+    right: 15px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.fars {
+    position: absolute;
+    right: 15px;
+    margin-top: -30px;
+    cursor: pointer;
+}

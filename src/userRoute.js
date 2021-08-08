@@ -26,7 +26,9 @@ userRouter.get("/downloads", (req, res) => {
    });
 });
 userRouter.get("/chats", (req, res) => {
-   res.status(200).render("pages/UserComponents/userChats");
+   res.status(200).render("pages/UserComponents/userChats", {
+      title: "Chats - Pikslide",
+   });
 });
 userRouter.get("/sales", (req, res) => {
    res.status(200).render("pages/UserComponents/userSales", {
@@ -44,7 +46,9 @@ userRouter.get("/billing", (req, res) => {
    });
 });
 userRouter.get("/mycart", (req, res) => {
-   res.status(200).render("pages/UserComponents/userMycart");
+   res.status(200).render("pages/UserComponents/userMycart", {
+      title: "My Cart - Pikslide",
+   });
 });
 
 module.exports = userRouter;

@@ -10,7 +10,8 @@
                 </button>
                 <a class="card-img-top d-block" href="/posts/products">
 
-                    <img src=" <%= p.img %>  " class="card-img-top mt-3" alt="Product">
+                    <img data-src="<%= p.img %>" src="../public/lazyload/pikslide-lazyload.jpg"
+                        class="card-img-top mt-3 lazyload" alt="Product">
                 </a>
                 <div class="card-body ">
                     <div class="d-flex flex-wrap justify-content-between align-items-start pb-1">

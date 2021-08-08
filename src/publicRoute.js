@@ -16,7 +16,7 @@ publicRoute.get("/", (req, res) => {
       },
    ];
    res.status(200).render("pages/IndexPage", {
-      titel: "Unlimited Templates, Themes and More - Pikslide",
+      title: "Unlimited Templates, Themes and More - Pikslide",
       imgs,
    });
 });
@@ -25,6 +25,8 @@ publicRoute.get("/logout", (req, res) => {
    res.redirect("/");
 });
 publicRoute.use((req, res, next) => {
-   res.status(404).render("./pages/404Page/404PageNotFound");
+   res.status(404).render("./pages/404Page/404PageNotFound", {
+      title: "404 page not found - Pikslide",
+   });
 });
 module.exports = publicRoute;

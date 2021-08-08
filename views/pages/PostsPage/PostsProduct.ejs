@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../UserComponents/userDashboard/HaderTitel.ejs') %>
 
-<head>
-    <meta charset="utf-8">
-    <title> <%= title %> </title>
-    <!-- SEO Meta Tags-->
-    <meta name="description" content="Pikslide - Bootstrap E-commerce Template">
-    <meta name="keywords"
-        content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
-    <meta name="author" content="Pikslide Studio">
-    <!-- Viewport-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Style Link -->
-    <%-include('../../Link_Script/Links.ejs')%>
-    <!-- Style Link -->
+<!-- Style Link -->
+<%-include('../../Link_Script/Links.ejs')%>
+<!-- Style Link -->
 </head>
 
 <body class="toolbar-enabled">
@@ -60,14 +48,14 @@
                 data-carousel-options='{"items": 3, "nav": false, "responsive": {"0":{"items":1},"500":{"items":2, "gutter": 18},"768":{"items":3, "gutter": 20}, "1100":{"gutter": 24}}}'>
                 <% for(let i=0;i<4;i++){ %>
                 <a href="#">
-                    <img src="https://cartzilla.createx.studio/img/components/carousel/01.jpg" alt="...">
+                    <img src="../public/lazyload/pikslide-lazyload.jpg" class="lazyload"
+                        data-src="https://cartzilla.createx.studio/img/components/carousel/01.jpg" alt="...">
                 </a>
                 <% } %>
             </div>
         </div>
     </div>
     <!-- Carousel Section End-->
-
 
     <!-- Page Content-->
     <div class="container pb-5 mb-2 ">
@@ -79,7 +67,9 @@
                     data-bs-toggle="tooltip" data-bs-placement="left" title="Love"><i
                         class="czi-heart text-light shadow "></i></button>
                 <a class="card-img-top d-block" href="/posts/products">
-                    <img src="../../public/img/marketplace/products/02.jpg" class="card-img-top mt-3" alt="Product">
+                    <img src="../public/lazyload/pikslide-lazyload.jpg"
+                        data-src="../../public/img/marketplace/products/02.jpg" class="card-img-top mt-3 lazyload"
+                        alt="Product">
                 </a>
                 <div class="card-body ">
                     <div class="d-flex flex-wrap justify-content-between align-items-start pb-1">
